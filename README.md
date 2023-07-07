@@ -9,5 +9,5 @@ O projeto será dividido em duas partes: a
     2ª Segunda é utilizando o sistema de versionamento Github para gerenciar o processo de desenvolvimento e hospedagem da página web.
 
 Grupo formato pelo alunos:
-Matuzalem Pereira Batista
+Matuzalem Pereira Batista,
 Willian Rezende Alves
