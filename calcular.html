@@ -24,28 +24,62 @@
     </script>
 
     <style>
-        a{
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: rgb(198, 225, 249);
+        }
+        .principal{
+            margin: auto;
+            text-align: center;
+            padding-top: 30px;
+        }
+        .principal h1{
+            text-align: center;
+            font-size: 50px;
+            padding-top: 30px;
+            
+        }
+        .principal > a{
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 7px;
             margin-top: 50px;
-            font-size: 30px;
+            
+            background-color: rgb(234, 52, 52) ;
+            width: 600px;
+        }
+        .fonte{
+            margin-top: 30px;
+            font-size: 20px;
+        }
+        form{
+            padding-top: 20px;
+        }
+
+        .numero {
+            width: ;
         }
     </style>
 </head>
 <body>
-    <h1>Conversor de Bases</h1>
-    <form>
-        <label for="inputNumber">Número:</label>
-        <input type="text" id="inputNumber">
-        <button type="button" onclick="convert()">Converter</button>
-    </form>
-    <br>
-    <div id="decimalResult"></div>
-    <br>
-    <div id="binaryResult"></div>
-    <br>
-    <div id="hexadecimalResult"></div>
+    <div class="principal">
 
-    <section>
-        <a href="index.html">Voltar a tela anterior</a>
-    </section>
+        <h1>Conversor de Bases</h1>
+        <form>
+            <label class="numero" for="inputNumber">Número:</label>
+            <input type="text" id="inputNumber">
+            <button type="button" onclick="convert()">Converter</button>
+        </form>
+        <br>
+
+        <div id="decimalResult"></div>
+        <br>
+        <div id="binaryResult"></div>
+        <br>
+        <div id="hexadecimalResult"></div>
+
+        <a href="index.html" class="fonte">Voltar a tela anterior</a>
+      
+    </div>
 </body>
 </html>
