@@ -1,8 +1,6 @@
 # IFTM-TSPI-Final
-Projeto final do curso IFTM Campus Uberlandia Centro 
+Projeto final da Materia: STPI do 1ª periodo do curso Sistemas para Internet - IFTM Campus Uberlandia Centro 
 
-Materia: STPI do 1ª
- 
 Neste projeto, vamos ser responsáveis por explorar a integração entre desenvolvimento web e o sistema de
 versionamento GitHub, ao mesmo tempo em que aprofundam o conhecimento sobre sistemas de numeração (binário,
 decimal e hexadecimal). 
