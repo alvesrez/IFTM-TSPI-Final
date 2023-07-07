@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Conversor de Bases</title>
+    <script>
+        function convert() {
+            var inputNumber = document.getElementById("inputNumber").value;
+            var decimalResult = document.getElementById("decimalResult");
+            var binaryResult = document.getElementById("binaryResult");
+            var hexadecimalResult = document.getElementById("hexadecimalResult");
+            
+            // Converter para decimal
+            var decimalValue = parseInt(inputNumber, 10);
+            decimalResult.innerHTML = "Decimal: " + decimalValue;
+            
+            // Converter para binário
+            var binaryValue = parseInt(inputNumber, 2);
+            binaryResult.innerHTML = "Binário: " + binaryValue.toString(2);
+            
+            // Converter para hexadecimal
+            var hexadecimalValue = parseInt(inputNumber, 16);
+            hexadecimalResult.innerHTML = "Hexadecimal: " + hexadecimalValue.toString(16).toUpperCase();
+        }
+    </script>
+</head>
+<body>
+    <h1>Conversor de Bases</h1>
+    <form>
+        <label for="inputNumber">Número:</label>
+        <input type="text" id="inputNumber">
+        <button type="button" onclick="convert()">Converter</button>
+    </form>
+    <br>
+    <div id="decimalResult"></div>
+    <br>
+    <div id="binaryResult"></div>
+    <br>
+    <div id="hexadecimalResult"></div>
+</body>
+</html>

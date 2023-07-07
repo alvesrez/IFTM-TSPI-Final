@@ -1,0 +1,24 @@
+<!-- Dentro do form -->
+<button type="button" onclick="copyToClipboard()">Copiar</button>
+
+<!-- No JavaScript -->
+function copyToClipboard() {
+  var result = document.getElementById('result');
+  var text = result.textContent || result.innerText;
+
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(text)
+      .then(function() {
+        alert('Texto copiado para a área de transferência.');
+      })
+      .catch(function(error) {
+        alert('Falha ao copiar o texto: ' + error);
+      });
+  } else {
+    // Fallback para navegadores mais antigos
+    var textarea = document.createElement('textarea');
+    textarea.value = text;
+    textarea.style.position = 'fixed';
+    document.body.appendChild(textarea);
+    textarea.focus();
+    textarea.select();
